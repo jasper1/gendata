@@ -15,7 +15,7 @@ class Command(BaseCommand):
     
 
     def handle(self, *args, **options):
-        countries = {}
+        countries = {} 
         
         print "Process countries"
         countries_db = os.path.abspath(os.path.join(self.folder,'countries.csv'))
@@ -51,7 +51,7 @@ class Command(BaseCommand):
                 counter = 0
                 print total_counter
                 
-            if total_counter<2013100:
+            if total_counter<2675400:
                 continue
             
             city_ascii = city[1][:79]
@@ -79,8 +79,7 @@ class Command(BaseCommand):
                 city_obj.save()
             except:
                 print "Pass %s" % city_ascii
-                print sys.exc_info()
-                sys.exit()
+                
 
                     
             
