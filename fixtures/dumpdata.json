@@ -1,0 +1,53 @@
+[
+  {
+    "pk": 1, 
+    "model": "generators.country", 
+    "fields": {
+      "country": "Russia", 
+      "zip_format": "DDDDDD", 
+      "country_lang_key": "RU"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "generators.region", 
+    "fields": {
+      "country": 1, 
+      "region": "Moskow", 
+      "weigth": "1", 
+      "region_short": "MO"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "generators.city", 
+    "fields": {
+      "country": 1, 
+      "region": 1, 
+      "city": "Moskow"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "generators.address", 
+    "fields": {
+      "city": 1, 
+      "address": "Barklaya, 3/2, build 1, 105"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "generators.firstname", 
+    "fields": {
+      "gender": "M", 
+      "first_name": "John"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "generators.surname", 
+    "fields": {
+      "surname": "Smith"
+    }
+  }
+]
