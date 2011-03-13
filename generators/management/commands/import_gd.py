@@ -16,7 +16,6 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         countries = {}
-        regions = {}
         
         print "Process countries"
         countries_db = os.path.abspath(os.path.join(self.folder,'countries.csv'))

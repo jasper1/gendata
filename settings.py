@@ -30,6 +30,10 @@ SITE_ID = 1
 USE_I18N = True
 USE_L10N = True
 
+IMAGE_ROOT = rel('static/images')
+CSS_ROOT   = rel('static/css')
+JS_ROOT    = rel('static/js')
+
 MEDIA_ROOT = ''
 MEDIA_URL = ''
 STATIC_ROOT = ''
