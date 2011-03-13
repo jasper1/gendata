@@ -2,11 +2,11 @@ import sys, os
 import csv
 
 
-from django.core.management.base import BaseCommand, CommandError
+from django.core.management.base import BaseCommand
 from generators.models import Country, City, Region
 
 
-
+# Load geo data from CSV files
 class Command(BaseCommand):
     args = '<import_folder ...>'
     help = 'Import data from not normalized csv files'

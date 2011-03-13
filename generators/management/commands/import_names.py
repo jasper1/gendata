@@ -1,12 +1,12 @@
-import sys, os
+import os
 import csv
 
-
-from django.core.management.base import BaseCommand, CommandError
+from django.core.management.base import BaseCommand
 from generators.models import FirstName, Surname
 
 
 
+# Load peoples firstnames and surnames data from CSV file
 class Command(BaseCommand):
     args = '<import_folder ...>'
     help = 'Import data from not normalized csv files'
